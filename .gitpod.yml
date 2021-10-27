@@ -1,0 +1,17 @@
+tasks:
+  - init: |
+      apt-get update
+      apt-get install --yes libavutil-dev libavdevice-dev libavfilter-dev libavformat-dev
+      apt-get install --yes youtube-dl
+      apt-get install --yes libopus-dev
+      apt-get autoremove --yes
+      apt-get autoclean --yes
+      cargo install cargo-udeps
+      cargo install cargo-edit
+      cargo build --workspace
+    command: |
+      cargo clean
+      cargo watch "run --project core"
+vscode:
+  extensions:
+    - matklad.rust-analyzer

@@ -1,0 +1,30 @@
+name: Security
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - "**/Cargo.toml"
+      - '**/Cargo.lock'
+  pull_request:
+
+jobs:
+  audit:
+    name: Audit Check
+    runs-on: [ "self-hosted" ]
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v2
+
+      - name: Install minimal stable toolchain
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: nightly
+          override: true
+
+      - name: Perform an audit for dependencies with security vulnerabilities.
+        uses: actions-rs/audit-check@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
