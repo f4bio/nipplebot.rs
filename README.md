@@ -13,25 +13,25 @@
 
 ## about
 
-* incredibly early development -> don\'t use for anything...
+- incredibly early development -> don't use for anything...
 
 ## requirements
 
 // TODO: more details needed
 
-* [youtube-dl](https://github.com/ytdl-org/youtube-dl)
-  * `apt install youtube-dl`
-* [ffmpeg](https://github.com/FFmpeg/FFmpeg)
-  * Option 1: `apt install libavutil-dev libavdevice-dev libavfilter-dev libavformat-dev`
-  * Option 2: `apt install ffmpeg`
-* [opus](https://github.com/xiph/opus)
-  * `apt install libopus-dev`
-* [zeromq](https://zeromq.org)
-  * `apt install libzmq3-dev`
+- [youtube-dl](https://github.com/ytdl-org/youtube-dl)
+  - `apt install youtube-dl`
+- [ffmpeg](https://github.com/FFmpeg/FFmpeg)
+  - Option 1: `apt install libavutil-dev libavdevice-dev libavfilter-dev libavformat-dev`
+  - Option 2: `apt install ffmpeg`
+- [opus](https://github.com/xiph/opus)
+  - `apt install libopus-dev`
+- [zeromq](https://zeromq.org)
+  - `apt install libzmq3-dev`
 
 ## helpful links
 
-* ...
+- ...
 
 ## environment
 
@@ -46,7 +46,7 @@
       -p 4222:4222 \
       -p 8222:8222 \
       -d nats:latest
-   ``` 
+   ```
 
 ### discord
 
@@ -58,10 +58,10 @@ get `DISCORD_TOKEN` from:
 
 #### invite
 
-get invite link from:  
+get invite link from:
 `https://discord.com/developers/applications/<application_id>/oauth2`
 
-e.g.:  
+e.g.:
 `https://discord.com/api/oauth2/authorize?client_id=<client_id>&permissions=0&scope=bot%20applications.commands`
 
 #### message's author's guild's channels (the fuck? xD)
@@ -70,17 +70,17 @@ response:
 
 ```
 [
-  GuildChannel {  
-    id: ChannelId(<channel_id>),  
-    bitrate: None, 
-    category_id: None, 
-    guild_id: GuildId(<guild_id>), 
-    kind: Category, 
-    last_message_id: None, 
-    last_pin_timestamp: None, 
-    name: "Text Channels", 
-    permission_overwrites: [], 
-    position: 0, 
+  GuildChannel {
+    id: ChannelId(<channel_id>),
+    bitrate: None,
+    category_id: None,
+    guild_id: GuildId(<guild_id>),
+    kind: Category,
+    last_message_id: None,
+    last_pin_timestamp: None,
+    name: "Text Channels",
+    permission_overwrites: [],
+    position: 0,
     topic: None,
     user_limit: None,
     nsfw: false,
@@ -93,7 +93,7 @@ response:
     member: None,
     default_auto_archive_duration: None
   },
-  GuildChannel { 
+  GuildChannel {
     id: ChannelId(<channel_id>),
     bitrate: None,
     category_id: None,
@@ -114,9 +114,9 @@ response:
     member_count: None,
     thread_metadata: None,
     member: None,
-    default_auto_archive_duration: None 
+    default_auto_archive_duration: None
   },
-  GuildChannel { 
+  GuildChannel {
     id: ChannelId(<channel_id>),
     bitrate: None,
     category_id: Some(ChannelId(<channel_id>)),
@@ -137,9 +137,9 @@ response:
     member_count: None,
     thread_metadata: None,
     member: None,
-    default_auto_archive_duration: None 
+    default_auto_archive_duration: None
   },
-  GuildChannel { 
+  GuildChannel {
     id: ChannelId(<channel_id>),
     bitrate: Some(64000),
     category_id: Some(ChannelId(<channel_id>)),
@@ -160,9 +160,9 @@ response:
     member_count: None,
     thread_metadata: None,
     member: None,
-    default_auto_archive_duration: None 
+    default_auto_archive_duration: None
   },
-  GuildChannel { 
+  GuildChannel {
     id: ChannelId(<channel_id>),
     bitrate: None,
     category_id: Some(ChannelId(<channel_id>)),
@@ -172,10 +172,10 @@ response:
     last_pin_timestamp: None,
     name: "events",
     permission_overwrites: [
-      PermissionOverwrite { 
-        allow: ADD_REACTIONS, 
-        deny: SEND_MESSAGES, 
-        kind: Role(RoleId(<role_id>)) 
+      PermissionOverwrite {
+        allow: ADD_REACTIONS,
+        deny: SEND_MESSAGES,
+        kind: Role(RoleId(<role_id>))
       }
     ],
     position: 2,

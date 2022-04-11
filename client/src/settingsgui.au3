@@ -21,7 +21,7 @@ Func ShowSettingsGui($firstTimeSetup, $configFilePath)
 	;Create window
 	GUICreate($windowTitle, $iGUIWidth, $iGUIHeight)
 	Opt("GUICoordMode", 2)
-	
+
 	$idWebhhokUrl_Label = GUICtrlCreateLabel("Webhook Url", 10, 10, 75)
 
 	;Create an edit box with no text in it
