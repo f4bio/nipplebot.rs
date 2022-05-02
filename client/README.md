@@ -13,7 +13,7 @@
 
 ## about
 
-* incredibly early development -> don\'t use for anything...
+- incredibly early development -> don't use for anything...
 
 ## build via autoit
 
